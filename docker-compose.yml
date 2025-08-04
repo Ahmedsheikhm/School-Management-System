@@ -1,0 +1,19 @@
+services:
+  school-app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - school-network
+    restart: unless-stopped
+
+networks:
+  school-network:
+    driver: bridge
+
+volumes:
+  logs:
