@@ -136,8 +136,7 @@ The application comes with pre-loaded sample data including:
 - **Database**: H2 in-memory database
 - **Console**: Available at http://localhost:8080/h2-console
 - **JDBC URL**: jdbc:h2:mem:school_db
-- **Username**: sa
-- **Password**: password
+- 
 
 ## API Documentation
 
